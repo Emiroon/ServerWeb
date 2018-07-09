@@ -6,3 +6,15 @@ services:
    dockerfile: Dockerfile
   ports:
   - "5555:80"
+ site_2:
+  build:
+   context: ./site_2
+   dockerfile: Dockerfile
+  ports:
+  - "4000:80"
+ phpfpm1:
+  image: php:7.2-fpm
+ phpfpm2:
+  image: php:7.2-fpm
+ phpfpm3:
+  image: php:7.2-fpm
