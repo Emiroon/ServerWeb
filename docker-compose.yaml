@@ -1,0 +1,8 @@
+version: '2'
+services:
+ site_1:
+  build:
+   context: ./site_1
+   dockerfile: Dockerfile
+  ports:
+  - "5555:80"
